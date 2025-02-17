@@ -18,7 +18,7 @@ function App() {
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/add-product" element={<AddProductForm />} />
         <Route path="/admin-register" element={<AdminRegistration />} />
-
+        <Route path="/register" element={<AdminRegistration />} />
         {/* User Routes */}
         <Route path="/user-register" element={<UserRegistration />} /> {/* User Registration */}
         <Route path="/user-login" element={<UserLogin />} /> {/* User Login */}

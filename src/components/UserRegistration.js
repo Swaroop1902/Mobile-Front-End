@@ -13,7 +13,7 @@ const UserRegistration = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/users/register', { username, email, password });
+      const response = await axios.post('http://localhost:5000/api/users/register', { username, email, password });
       localStorage.setItem('token', response.data.token); // Store the token in local storage
       navigate('/user-dashboard'); // Redirect to the user's dashboard or wherever you'd like
     } catch (err) {
